@@ -24,3 +24,11 @@ deploy:
   app: stark-harbor-67361
   on:
     repo: corck/peepchat-ui
+env:
+  - CXX=g++-4.8
+addons:
+  apt:
+    sources:
+      - ubuntu-toolchain-r-test
+    packages:
+      - g++-4.8
